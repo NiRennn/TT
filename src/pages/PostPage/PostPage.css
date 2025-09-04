@@ -1,0 +1,29 @@
+.post-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.post-page__card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+} 
+
+.post-page__title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.post-page__body {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.post-page__loading {
+  text-align: center;
+  font-size: 20px;
+  padding: 50px;
+}
