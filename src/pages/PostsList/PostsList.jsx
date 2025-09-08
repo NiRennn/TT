@@ -11,13 +11,15 @@ function PostsList() {
 
   useEffect(() => {
     const fetchPosts = async () => {
+      if (posts.length === 0) {
       const res = await fetch("https://jsonplaceholder.typicode.com/posts");
       const data = await res.json();
       dispatch(setPosts(data.slice(0, 20)));
+      }
     };
     fetchPosts();
-  }, [dispatch]);
-
+  }, [dispatch, posts.length]);
+ 
   return (
     <div className="posts">
 
